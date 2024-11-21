@@ -1,0 +1,91 @@
+/* Chatbot Icon with image */
+#chatbot-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    box-shadow: 0px 4px 12px rgba(12, 12, 12, 0.1);
+    border-radius: 50%;
+    
+}
+
+#chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover;  /* Ensures the image covers the entire space without distortion */
+}
+
+/* Chatbot Window */
+#chatbot-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Chatbot Content Styling (same as the previous chatbot CSS) */
+#chatbox {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+#messages div {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 75%;
+}
+
+#messages div:nth-child(odd) {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+#messages div:nth-child(even) {
+    background-color: #4caf50;
+    color: white;
+    align-self: flex-end;
+}
+
+#inputArea {
+    display: flex;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+#userInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

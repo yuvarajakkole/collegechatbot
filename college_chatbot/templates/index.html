@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/chatbot.css"> <!-- Chatbot styles -->
+</head>
+<body>
+    <!-- College Website Header -->
+    <header>
+        <h1>Welcome to XYZ College</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- College Website Main Content -->
+    <main>
+        <section>
+            <h2>About XYZ College</h2>
+            <p>XYZ College is a premier institution offering various undergraduate and postgraduate programs.</p>
+        </section>
+    </main>
+
+    <!-- Chatbot Icon -->
+<div id="chatbot-icon" onclick="toggleChatbot()">
+    <img src="/static/chatbot-icon.png" alt="Chatbot Icon">
+</div>
+
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window">
+        <div id="chatbot">
+            <div id="chatbox">
+                <div id="messages"></div>
+            </div>
+            <div id="inputArea">
+                <input type="text" id="userInput" placeholder="Ask me something..." onkeypress="return sendOnEnter(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+<!-- designer = ["designer", "maker","developer","design"]
+    elif fuzzy_match(user_input,designer):
+        answer = (" This website is a way to get easy and friendly communicating--\n"
+                  "this will be designed to by group of 3 Enggenering students---\n"
+                  "{-Yuvaraj A}\n"
+                  "{-Dhanush B M}\n"
+                  "{-B G vibhav}\n") -->
+
+
+    <script src="/static/script.js"></script> <!-- Main script -->
+</body>
+</html>
